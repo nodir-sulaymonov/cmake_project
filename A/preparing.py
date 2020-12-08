@@ -6,4 +6,4 @@ if __name__ == '__main__':
     out = sys.argv[1]
 
     with open(out, 'w') as file:
-        file.write(f'int Sub(int a, int b){{ return a + b;}}\n')
+        file.write('#pragma once\n\nint Sub(int a, int b){ return a + b;}\n')
